@@ -25,23 +25,23 @@ Getting Started
 *   Google/YouTube Data API credentials
 *   Python Libraries: moviepy, google-auth, google-auth-oauthlib, google-auth-httplib2
 
-### Installation
+### Installation and Setup
 
-1\. Clone the repository:
-
-    git clone https://github.com/mangrv/StreamlinePlay.git
-
-2\. Install the required Python libraries using the following commands (for both Ubuntu and macOS):
-
+1.  Clone the repository:
     
-    # Update pip
-    python3 -m pip install --upgrade pip
+        git clone https://github.com/mangrv/StreamlinePlay.git
     
-    # Install moviepy
-    pip3 install moviepy
+2.  Install the required Python libraries:
     
-    # Install Google API client libraries
-    pip3 install google-auth google-auth-oauthlib google-auth-httplib2
+        
+        # Update pip
+        python3 -m pip install --upgrade pip
+        
+        # Install moviepy
+        pip3 install moviepy
+        
+        # Install Google API client libraries
+        pip3 install google-auth google-auth-oauthlib google-auth-httplib2
     
 
 ### Usage
@@ -56,7 +56,30 @@ Getting Started
 
 ### Configuration
 
-Edit the `config.py` file to set up your video folder paths, YouTube API credentials, and watermark settings.
+After cloning the repository, you need to perform a couple of simple setup steps:
+
+1.  **Rename the Script**:
+    
+    The main script is initially named `streamlineplayGeneric.py`. Rename it to `streamlineplay.py` for consistency and ease of use:
+    
+        mv streamlineplayGeneric.py streamlineplay.py
+    
+    Or, you can directly use `streamlineplayGeneric.py` if you prefer.
+    
+2.  **Set Up Configurations**:
+    
+    Update the `config.py` file with paths relevant to your system:
+    
+    *   `VIDEO_DIRECTORY`: Path to the folder where your new video files are saved.
+    *   `WATERMARK_PATH`: Path to your watermark image.
+    *   `PROCESSED_DIRECTORY`: Path where processed videos will be saved.
+3.  **Run the Script**:
+    
+    To start the script, simply run:
+    
+        python streamlineplay.py
+    
+    (or use `python streamlineplayGeneric.py` if you haven't renamed it.)
 
 Contributing
 ------------
