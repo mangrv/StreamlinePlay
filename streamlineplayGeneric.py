@@ -27,9 +27,10 @@ def add_watermark(video_path, watermark_path, output_path):
 
 # Main script logic
 if __name__ == "__main__":
-    video_directory = 'path/to/your/video/folder'
-    watermark_path = 'path/to/watermark.png'
-    processed_directory = 'path/to/processed/videos'
+    video_directory = '/Users/cmdnotfound/Development/ji/tools/StreamlinePlay/video_directory'
+    watermark_path = '/Users/cmdnotfound/Development/ji/tools/StreamlinePlay/watermark_path/your_watermark_image.png'
+    processed_directory = '/Users/cmdnotfound/Development/ji/tools/StreamlinePlay/processed_directory'
+    
     
     while True:
         latest_video = get_latest_video(video_directory)
